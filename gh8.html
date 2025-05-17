@@ -1,0 +1,81 @@
+<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery UI Приклад</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="js/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    body {
+      font-family: Arial;
+      font-size: 16px;
+      margin: 20px;
+    }
+    .ui-widget {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Accordion -->
+  <div id="accordion">
+    <h3>Розділ 1</h3>
+    <div><p>Це вміст першого розділу.</p></div>
+    <h3>Розділ 2</h3>
+    <div><p>Це вміст другого розділу.</p></div>
+  </div>
+
+  <!-- Datepicker -->
+  <p>Оберіть дату: <input type="text" id="datepicker"></p>
+
+  <!-- Tabs -->
+  <div id="tabs">
+    <ul>
+      <li><a href="#tab-1">Вкладка 1</a></li>
+      <li><a href="#tab-2">Вкладка 2</a></li>
+    </ul>
+    <div id="tab-1"><p>Контент першої вкладки.</p></div>
+    <div id="tab-2"><p>Контент другої вкладки.</p></div>
+  </div>
+
+  <script>
+    $(function() {
+      $("#accordion").accordion();
+      $("#datepicker").datepicker();
+      $("#tabs").tabs();
+    });
+  </script>
+
+</body>
+</html>
+<!-- Slider -->
+<p>
+  <label for="amount">Число:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider"></div>
+
+<!-- Tooltip -->
+<p><a href="#" title="Це підказка">Наведіть на мене</a></p>
+
+<script>
+  $(function() {
+    $("#slider").slider({
+      value: 50,
+      min: 0,
+      max: 100,
+      slide: function(event, ui) {
+        $("#amount").val(ui.value);
+      }
+    });
+    $("#amount").val($("#slider").slider("value"));
+    
+    $(document).tooltip();
+  });
+</script>
+
