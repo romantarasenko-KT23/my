@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя веб-сторінка з банером</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Фавіконка -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Стилі для банера */
+        .banner {
+            width: 30%;  /* Зображення на всю ширину */
+            height: auto;  /* Пропорційна висота */
+            margin: 0 auto;  /* Центрування зображення */
+            display: block;  /* Встановлюємо блочний елемент */
+        }
+
+        /* Стилі для заголовка */
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Стилі для логотипу */
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        /* Стилі для SVG */
+        svg {
+            width: 150px;
+            height: 150px;
+            margin-top: 30px;
+        }
+
+        /* Стилі для фотоколажу */
+        .collage {
+            width: 30%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Анімація для зображення */
+        .animated {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 30% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Заголовок сторінки -->
+    <h1>Моя веб-сторінка з графічними елементами</h1>
+
+    <!-- Банер -->
+    <img class="banner" src="pr4.2.png" alt="Банер">
+
+    <!-- Логотип -->
+    <section>
+        <h2>Логотип:</h2>
+        <img class="logo" src="pr4.3.png" alt="Логотип">
+    </section>
+
+    <!-- SVG зображення -->
+    <section>
+        <h2>SVG зображення:</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+        </svg>
+    </section>
+
+    <!-- Фотоколаж -->
+    <section>
+        <h2>Фотоколаж:</h2>
+        <img class="collage" src="pr.4.77.jpg" alt="Фотоколаж">
+    </section>
+
+    <!-- Анімоване зображення -->
+    <section>
+        <h2>Анімація:</h2>
+        <img class="animated" src="pr4.88.svg" alt="Анімоване зображення">
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>Створено за допомогою HTML, CSS, SVG та JavaScript</p>
+    </footer>
+
+    <!-- Вставка фавіконки -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</body>
+</html>
