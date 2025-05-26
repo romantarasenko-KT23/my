@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шрифти для Веб</title>
+
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Іконковий шрифт: Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Нестандартний шрифт (припустимо, файл у папці fonts/ називається ModernSans.woff2) -->
+  <style>
+    @font-face {
+      font-family: 'ModernSans';
+      src: url('fonts/ModernSans.woff2') format('woff2');
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 20px;
+      background: #f6f6f6;
+      color: #333;
+    }
+
+    header {
+      font-family: 'ModernSans', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    nav {
+      font-family: 'ModernSans', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    .info-icons {
+      display: flex;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .info-item {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+    }
+
+    .info-item i {
+      font-size: 2rem;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Лабораторна робота: Шрифти для Веб</header>
+
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <section>
+    <h2>Google-шрифт застосовано до основного тексту</h2>
+    <p>Цей текст використовує Google Font <strong>Roboto</strong>. Він універсальний і гарно читається на будь-яких екранах.</p>
+  </section>
+
+  <section>
+    <h2>Іконки з Font Awesome</h2>
+    <div class="info-icons">
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Локація</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <p>Пошта</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <p>Телефон</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Веб-розробка. Усі права захищені.
+  </footer>
+
+</body>
+</html>
